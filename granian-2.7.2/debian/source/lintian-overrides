@@ -1,0 +1,4 @@
+# Vendored upstream winapi import libraries are only for Windows targets.
+# Lintian tries to inspect them with ar when unpacking the orig tarball and
+# emits unpack-message-for-orig, but they are not used for the Linux build.
+python3-granian source: unpack-message-for-orig *granian-2.7.2/vendor/winapi-*-pc-windows-gnu/lib/*.a*

@@ -1,0 +1,27 @@
+# Unrelated local infrastructure and caches
+aptcache/
+local-apt-repo/
+pbuilder-aptconf/
+pbuilder-hooks/
+pbuilder-inspect.sh
+pbuilder-localrc
+tmp-rust/
+unused-binaries/
+vendor-tools/
+
+# Generated source-build helper files
+granian_2.7.2-1~ppa1_source.build
+granian_2.7.2-1~ppa1_source.*.upload
+
+# Build artifacts inside the source tree
+granian-2.7.2/debian/files
+granian-2.7.2/debian/.debhelper/
+granian-2.7.2/debian/.venv/
+granian-2.7.2/debian/.cargo-home/
+granian-2.7.2/debian/python3-granian/
+granian-2.7.2/debian/tmp/
+granian-2.7.2/dist/
+granian-2.7.2/target/
+granian-2.7.2/__pycache__/
+granian-2.7.2/tests/**/__pycache__/
+SESSION_NOTES.md

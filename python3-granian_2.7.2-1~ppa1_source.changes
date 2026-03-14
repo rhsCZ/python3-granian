@@ -1,0 +1,52 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 14 Mar 2026 13:40:00 +0100
+Source: python3-granian
+Built-For-Profiles: noudeb
+Architecture: source
+Version: 2.7.2-1~ppa1
+Distribution: noble
+Urgency: medium
+Maintainer: PPA Builder <builder@example.com>
+Changed-By: PPA Builder <builder@example.com>
+Changes:
+ python3-granian (2.7.2-1~ppa1) noble; urgency=medium
+ .
+   * Build against versioned rustc-1.91 and cargo-1.91 packages.
+   * Provide cargo/rustc shims in PATH for maturin.
+   * Use the packaged maturin binary instead of an amd64-only wheel.
+   * Reduce Rust link-time memory use on armhf builds.
+Checksums-Sha1:
+ 06b01280dd4437efff21a23259e225f609e09668 1908 python3-granian_2.7.2-1~ppa1.dsc
+ 92a9ffcaabb4866b5e9d68932933520f369ef4d0 45096644 python3-granian_2.7.2.orig.tar.gz
+ e67a324153c3bd1c966e8215d6a47726a40ddba4 2564 python3-granian_2.7.2-1~ppa1.debian.tar.xz
+ e7845f6a4a19cc2bdf64f472ba1b6ffc6ea266d0 8502 python3-granian_2.7.2-1~ppa1_source.buildinfo
+Checksums-Sha256:
+ 2d362f9d0a62d8494d5e1e794cb3e583038a8cc30e2b664ea684fbbfba48ded4 1908 python3-granian_2.7.2-1~ppa1.dsc
+ ebb1fc645ec31105193cc6e4f52730d573e33378d69ca5285240808e78c8776d 45096644 python3-granian_2.7.2.orig.tar.gz
+ 0a7c250e1bca99bc55dd7e7d8139968b67f447a6b67e7cc83e47b0f1d2b025d5 2564 python3-granian_2.7.2-1~ppa1.debian.tar.xz
+ 0f525c85763f9fa43d8bf2f997af42d8a4bae4cac65a943cda70c027f85dfc30 8502 python3-granian_2.7.2-1~ppa1_source.buildinfo
+Files:
+ f5ca8e17683d7c0d491a452cfac2f07a 1908 python optional python3-granian_2.7.2-1~ppa1.dsc
+ c3041965c444f0eef0f6b25a4d68bbe0 45096644 python optional python3-granian_2.7.2.orig.tar.gz
+ fa37c4a881bf263ef3c99c04bf596248 2564 python optional python3-granian_2.7.2-1~ppa1.debian.tar.xz
+ 96054cb74e5eac78c08111d48093ab42 8502 python optional python3-granian_2.7.2-1~ppa1_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEBA4y7RgfpWqP10UabjGunhICqWAFAmm14QcACgkQbjGunhIC
+qWCU3Q//QQexzthkK9wUN0giaQhMzCrp/lIPL4HR3qMNUgAX024eQeU54dotMulI
+AdhRwMIecHdXtg+u/HJoYZBsxRgPquwhc5rx3NoLjWB8da5SaTZQKjDB/XuANkMN
+tbn7niMS8Ow3dl1X0+1GLWjr1gvFSrvfO8GRSI1559fldfNBJWXxDDMqxJPsLAqP
+VZQRpmVrAYDtiA4fdCfzp5dyYGHR15OXx+hsNe9a+kSxfXh9zxhYz0pW2ukyvqQx
+TFBFh6P5YT5w68KGtdRzbzIjYjY0F+A/u9NgR03BRMyoHFHvXIdI99YMLUI3uNN5
+vDzm9zsDIU11iy5mlDkJ/APs3dhXfHBiDOduEn+b3BueToCufCK+hU4fC9PRPsRo
+W2R9oL7G9EF4PGIaG9UCSsC/rxtiv2IDkneWK3NEZFllORssbiAJkcyzmbRFT2xr
+EtNgKNV8gRrdN30fFXmWaVOMTO+I7pTKd8SBhFqz9nUVinzTduImqoQL6G0PRcjr
+Kp1cnZo6VmqvnQZkoLyOdGHKlMsib4F0A4yR1EVCJVHwxYblCp3djIeQlLPpz1+J
+yz2/pGpuKhiziJucEf6u395rKGR4dW7LEpyCUyph5KY/HRzMUyylCKfvSMvxZ7Js
+gld61mQKycZn4bUl/Ep1II+ePD9ngm9wk7+cqydcr7UcZANAx2k=
+=QOev
+-----END PGP SIGNATURE-----

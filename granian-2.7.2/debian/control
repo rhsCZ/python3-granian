@@ -1,0 +1,25 @@
+Source: python3-granian
+Section: python
+Priority: optional
+Maintainer: PPA Builder <builder@example.com>
+Build-Depends: debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-dev,
+ python3-maturin,
+ python3-pip,
+ python3-setuptools,
+ cargo-1.91,
+ rustc-1.91,
+ pkgconf,
+ libssl-dev,
+ ca-certificates
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: python3-granian
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Rust HTTP server for Python applications
+ Granian is a fast HTTP server for Python applications, implemented in Rust
+ and exposed to Python via a native extension.

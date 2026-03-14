@@ -1,0 +1,8 @@
+python3-granian (2.7.2-1~ppa1) noble; urgency=medium
+
+  * Build against versioned rustc-1.91 and cargo-1.91 packages.
+  * Provide cargo/rustc shims in PATH for maturin.
+  * Use the packaged maturin binary instead of an amd64-only wheel.
+  * Reduce Rust link-time memory use on armhf builds.
+
+ -- PPA Builder <builder@example.com>  Sat, 14 Mar 2026 13:40:00 +0100

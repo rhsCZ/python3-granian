@@ -1,0 +1,20 @@
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/gi0baro/pyo3-log.git?branch=pyo3-027"]
+git = "https://github.com/gi0baro/pyo3-log.git"
+branch = "pyo3-027"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/gi0baro/tls-listener.git?branch=0.11.x"]
+git = "https://github.com/gi0baro/tls-listener.git"
+branch = "0.11.x"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/kotauskas/interprocess.git?rev=44351c4fe88c72ead4f3b0b762c4cf45beb90841"]
+git = "https://github.com/kotauskas/interprocess.git"
+rev = "44351c4fe88c72ead4f3b0b762c4cf45beb90841"
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
