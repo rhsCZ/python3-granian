@@ -1,0 +1,17 @@
+old/
+work/
+dist/
+artifacts/
+vendor-cache/
+__pycache__/
+*.pyc
+*.build
+*.buildinfo
+*.changes
+*.deb
+*.debian.tar.xz
+*.diff.gz
+*.dsc
+*.orig.tar.gz
+*.tar.gz
+*.tar.xz

@@ -1,0 +1,5 @@
+python3-granian (0.0.0-1~ppa1~noble1) noble; urgency=medium
+
+  * Initial packaging template.
+
+ -- PPA Builder <builder@example.com>  Thu, 01 Jan 1970 00:00:00 +0000
