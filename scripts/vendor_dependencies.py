@@ -13,7 +13,6 @@ RUSTFLAGS_BLOCK = """[build]
 rustflags = ["--cfg", "pyo3_disable_reference_pool"]
 """
 
-
 def run(*args: str, cwd: Path) -> str:
     result = subprocess.run(args, cwd=cwd, check=True, text=True, capture_output=True)
     return result.stdout
