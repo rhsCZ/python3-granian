@@ -18,11 +18,11 @@ PACKAGE_NAME = "python3-granian"
 MAINTAINER = "PPA Builder <builder@example.com>"
 
 
-def read_series_suffix_prefix(config_path: Path, series_name: str) -> str:
+def read_series_ubuntu_version(config_path: Path, series_name: str) -> str:
     config = json.loads(config_path.read_text(encoding="utf-8"))
     for item in config["series"]:
         if item["name"] == series_name:
-            return item["version_suffix_prefix"]
+            return item["ubuntu_version"]
     raise ValueError(f"Unknown series '{series_name}' in {config_path}")
 
 
@@ -36,8 +36,8 @@ def read_upload_revision(state_path: Path, version: str, series_name: str) -> in
     return int(series_uploads.get(series_name, 0)) + 1
 
 
-def build_package_version(version: str, series_suffix: str, revision: int) -> str:
-    return f"{version}-1~ppa1~{series_suffix}{revision}"
+def build_package_version(version: str, ubuntu_version: str, revision: int) -> str:
+    return f"{version}-{ubuntu_version}+0ubuntu{revision}"
 
 
 def download_file(url: str, destination: Path) -> None:
@@ -129,9 +129,9 @@ def main() -> int:
     upload_state_path = Path(args.upload_state).resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    suffix_prefix = read_series_suffix_prefix(config_path, args.series)
+    ubuntu_version = read_series_ubuntu_version(config_path, args.series)
     revision = read_upload_revision(upload_state_path, args.version, args.series)
-    package_version = build_package_version(args.version, suffix_prefix, revision)
+    package_version = build_package_version(args.version, ubuntu_version, revision)
     source_dir = output_dir / f"{PACKAGE_NAME}-{package_version}"
 
     if source_dir.exists():

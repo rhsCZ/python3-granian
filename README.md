@@ -18,7 +18,7 @@ signed source package to a Launchpad PPA.
 ## Repository layout
 
 - `debian-template/` Debian packaging template copied into each prepared source tree
-- `config/series.json` target Ubuntu series and version suffix prefixes
+- `config/series.json` target Ubuntu series and Ubuntu version suffixes
 - `scripts/` release detection, source preparation, source build, vendoring, and upload helpers
 - `.github/workflows/` scheduled and manual GitHub Actions workflows
 - `versions/state.json` last successfully uploaded upstream release
@@ -27,7 +27,7 @@ signed source package to a Launchpad PPA.
 ## Packaging model
 
 - The generated source package format is `3.0 (native)`.
-- Package versions follow the PPA revision style used by the existing package, for example `2.7.8-1~ppa1~noble2`.
+- Package versions follow an Ubuntu-style suffix, for example `2.7.8-24.04+0ubuntu1` or `2.7.8-26.04+0ubuntu1`.
 - The resulting source package contains a single `.tar.xz` payload.
 - Cargo dependencies are vendored into the prepared source tree so Launchpad builds remain offline-capable.
 
